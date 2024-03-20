@@ -14,6 +14,18 @@ def encode(code):
     return string
 
 
+def decode(code): #Colgan Miller coding addition
+    decode_string = ""
+    for i in code:
+        i = int(i)
+        j = i - 3
+        if j < 0:
+            j = 10 + j
+        decode_string += str(j)
+    return decode_string
+
+
+
 
 
 
